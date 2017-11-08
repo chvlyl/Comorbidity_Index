@@ -12,5 +12,5 @@ Charlson et al. proposed this comorbidity index in their 1987 paper, [A new meth
 ## Elixhauser Comorbidity Index
 Elixhauser et al. extended Charlson Comorbidity Index to include more diseases (total 30 diseases) in their paper [Comorbidity measures for use with administrative data](https://www.ncbi.nlm.nih.gov/pubmed/9431328). They showed that those comorbidities were associated with clinical outcomes such as length of stay, hospital charges, and mortality. The following table shows the 30 diseases or problems in Elixhauser Comorbidity Index (table was adapted from [Comorbidity indices by Dougados](http://www.clinexprheumatol.org/abstract.asp?a=8618))
 
-<img height="70%" width="70%" margin="auto" alt="Charlson Comorbidity Index" src="img/ECI.png">
+<img height="30%" width="30%" margin="auto" alt="Charlson Comorbidity Index" src="img/ECI.png">
 
