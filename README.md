@@ -9,9 +9,9 @@ Charlson et al. proposed this comorbidity index in their 1987 paper, [A new meth
 <img align="center" height="70%" width="70%" margin="auto" alt="Charlson Comorbidity Index" src="img/CCI_Weights.png">
 
 ## Updated Charlson Comorbidity Index
-The original Charlson Comorbidity Index was developed more than 20 years ago. In 2010, Quan et al. reevaluated the Charlson index based on a dataset of 55,929 patients. They reassigned the weights to each disease in the original Charlson index. Since five the them have updated weights of zeros, the updated Charlson Index only includes 12 diseases. The authors also validated the upated Charlson index on the external dataset from six other hospitals. The new 12-comorbidity index shows improved C-statistics for predicting mortality compared to the original one. 
+The original Charlson Comorbidity Index was developed more than 20 years ago. In 2010, Quan et al. reevaluated the Charlson index based on a dataset of 55,929 patients. They reassigned the weights to each disease in the original Charlson index. Since five the them have updated weights of zeros, the updated Charlson Index only includes 12 diseases. The authors also validated the upated Charlson index on the external dataset from six other hospitals. The new 12-comorbidity index shows improved C-statistics for predicting mortality compared to the original one. The following table shows the 12 diseases and associated weights in updated Charlson Comorbidity Index (table was adapted from [Updating and Validating the Charlson Comorbidity Index and Score for Risk Adjustment in Hospital Discharge Abstracts Using Data From 6 Countries](https://academic.oup.com/aje/article-lookup/doi/10.1093/aje/kwq433))
 
-<img align="center" height="70%" width="70%" margin="auto" alt="Updated Charlson Comorbidity Index" src="img/Updated_CCI_Weights.png">
+<img align="center" height="50%" width="50%" margin="auto" alt="Updated Charlson Comorbidity Index" src="img/Updated_CCI_Weights.png">
 
 
 ## Elixhauser Comorbidity Index
