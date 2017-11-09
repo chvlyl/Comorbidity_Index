@@ -19,3 +19,6 @@ Elixhauser et al. extended Charlson Comorbidity Index to include more diseases (
 
 <img align="center" height="30%" width="30%" margin="auto" alt="Charlson Comorbidity Index" src="img/ECI.png">
 
+## Reference
+1. Charlson ME et al. (1987): A new method of classifying prognostic comorbidity in longitudinal studies: development and validation
+2. Quan H et al. (2005): Translated the Charlson and Elixhauser comorbidity indexed into ICD-10
