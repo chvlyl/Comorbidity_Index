@@ -11,11 +11,7 @@ Charlson et al. proposed this comorbidity index in their 1987 paper, [A new meth
 
 Note that in the original paper, the disease diagnosis was defined by reviewing medical charts. However, in the issurance claim data or EHR data, the disease diagnosis is defined by diagnosis code. So we need to define the diagnosis code for those diseases in the Charlson comorbidity index in order to calculate it.
 
-<br><br>
-## Elixhauser Comorbidity Index
-Elixhauser et al. extended Charlson Comorbidity Index to include more diseases (total 30 diseases) in their paper [Comorbidity measures for use with administrative data](https://www.ncbi.nlm.nih.gov/pubmed/9431328). They showed that those comorbidities were associated with clinical outcomes such as length of stay, hospital charges, and mortality. The following table shows the 30 diseases or problems in Elixhauser Comorbidity Index (table was adapted from [Comorbidity indices by Dougados](http://www.clinexprheumatol.org/abstract.asp?a=8618))
 
-<img align="center" height="30%" width="30%" margin="auto" alt="Charlson Comorbidity Index" src="img/ECI.png">
 
 <br><br>
 ## Charlson Comorbidity Index by Deyo et al. (1992) and Romano et al. (1993)
@@ -35,6 +31,12 @@ The original Charlson Comorbidity Index was developed more than 20 years ago. In
 <img align="center" height="50%" width="50%" margin="auto" alt="Updated Charlson Comorbidity Index" src="img/Updated_CCI_Weights.png">
 
 
+<br><br>
+## Elixhauser Comorbidity Index
+Elixhauser et al. extended Charlson Comorbidity Index to include more diseases (total 30 diseases) in their paper [Comorbidity measures for use with administrative data](https://www.ncbi.nlm.nih.gov/pubmed/9431328). They showed that those comorbidities were associated with clinical outcomes such as length of stay, hospital charges, and mortality. The following table shows the 30 diseases or problems in Elixhauser Comorbidity Index (table was adapted from [Comorbidity indices by Dougados](http://www.clinexprheumatol.org/abstract.asp?a=8618))
+
+<img align="center" height="30%" width="30%" margin="auto" alt="Charlson Comorbidity Index" src="img/ECI.png">
+
 
 <br><br>
 ## How to Calculate Comorbidity Index?
@@ -42,7 +44,9 @@ In order to calculate hte comorbidity index, we need to know the diagnosis. In t
 
 There is also an AHRQ version (Agency for Healthcare Research and Quality)
 
-The SAS code can be found MCHP website: [Charlson Comorbidity Index](http://mchp-appserv.cpe.umanitoba.ca/viewConcept.php?conceptID=1098)
+The SAS code can be found on MCHP website: 
+* [Charlson Comorbidity Index](http://mchp-appserv.cpe.umanitoba.ca/viewConcept.php?conceptID=1098)
+* [Elixhauser Comorbidity Index](http://mchp-appserv.cpe.umanitoba.ca/viewConcept.php?conceptID=1436#a_references)
 
 <br><br>
 ## Reference
