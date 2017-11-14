@@ -12,6 +12,12 @@ Charlson et al. proposed this comorbidity index in their 1987 paper, [A new meth
 Note that in the original paper, the disease diagnosis was defined by reviewing medical charts. However, in the issurance claim data or EHR data, the disease diagnosis is defined by diagnosis code. So we need to define the diagnosis code for those diseases in the Charlson comorbidity index in order to calculate it.
 
 <br><br>
+## Elixhauser Comorbidity Index
+Elixhauser et al. extended Charlson Comorbidity Index to include more diseases (total 30 diseases) in their paper [Comorbidity measures for use with administrative data](https://www.ncbi.nlm.nih.gov/pubmed/9431328). They showed that those comorbidities were associated with clinical outcomes such as length of stay, hospital charges, and mortality. The following table shows the 30 diseases or problems in Elixhauser Comorbidity Index (table was adapted from [Comorbidity indices by Dougados](http://www.clinexprheumatol.org/abstract.asp?a=8618))
+
+<img align="center" height="30%" width="30%" margin="auto" alt="Charlson Comorbidity Index" src="img/ECI.png">
+
+<br><br>
 ## Charlson Comorbidity Index by Deyo et al. (1992) and Romano et al. (1993)
 In 1992, Deyo et al. provided a way to calculate the Charlson comorbidity index using ICD-9-CM code. The table below shows the mapping between the diseases defined in original Charlson index and ICD-9-CM code. The table was adapted from [Adapting a clinical comorbidity index for use with ICD-9-CM administrative databases](https://ohsu.pure.elsevier.com/en/publications/adapting-a-clinical-comorbidity-index-for-use-with-icd-9-cm-admin-3)
 
@@ -22,24 +28,21 @@ Similarly, Romano et al. (1993) also developed their version of Charlson Comorbi
 
 <br><br>
 ## Charlson Comorbidity Index by Quan et al.
-In 2005, Quan et al. further extended the Charlson Comorbidity Index calculation using ICD-9-CM and ICD-10 code ([Coding algorithms for defining comorbidities in ICD-9-CM and ICD-10 administrative data](https://insights.ovid.com/pubmed?pmid=16224307))
+In 2005, Quan et al. further extended the Charlson Comorbidity Index calculation using ICD-9-CM (called enhanced ICD-1-CM) and ICD-10 code ([Coding algorithms for defining comorbidities in ICD-9-CM and ICD-10 administrative data](https://insights.ovid.com/pubmed?pmid=16224307))
 
 The original Charlson Comorbidity Index was developed more than 20 years ago. In 2010, Quan et al. reevaluated the Charlson index based on a dataset of 55,929 patients. They reassigned the weights to each disease in the original Charlson index. Since five the them have updated weights of zeros, the updated Charlson Index only includes 12 diseases. The authors also validated the upated Charlson index on the external dataset from six other hospitals. The new 12-comorbidity index shows improved C-statistics for predicting mortality compared to the original one. The following table shows the 12 diseases and associated weights in updated Charlson Comorbidity Index (table was adapted from [Updating and Validating the Charlson Comorbidity Index and Score for Risk Adjustment in Hospital Discharge Abstracts Using Data From 6 Countries](https://academic.oup.com/aje/article-lookup/doi/10.1093/aje/kwq433))
 
 <img align="center" height="50%" width="50%" margin="auto" alt="Updated Charlson Comorbidity Index" src="img/Updated_CCI_Weights.png">
 
 
-<br><br>
-## Elixhauser Comorbidity Index
-Elixhauser et al. extended Charlson Comorbidity Index to include more diseases (total 30 diseases) in their paper [Comorbidity measures for use with administrative data](https://www.ncbi.nlm.nih.gov/pubmed/9431328). They showed that those comorbidities were associated with clinical outcomes such as length of stay, hospital charges, and mortality. The following table shows the 30 diseases or problems in Elixhauser Comorbidity Index (table was adapted from [Comorbidity indices by Dougados](http://www.clinexprheumatol.org/abstract.asp?a=8618))
-
-<img align="center" height="30%" width="30%" margin="auto" alt="Charlson Comorbidity Index" src="img/ECI.png">
 
 <br><br>
 ## How to Calculate Comorbidity Index?
 In order to calculate hte comorbidity index, we need to know the diagnosis. In the original Charlson Comorbidity Index paper, they reviewed the medical charts to define the patient's diagnosis. However, in the EHR data, the diagnosis is usually represented in diagnosis code (for example, ICD-9 or ICD-10 code). ICD stands for International Classification of Diseases - Medical Diagnosis Codes, which is commonly used for disease diagnosis classification. ICD-9 is the old version and ICD-10 is the new version. In order to calculate hte comorbidity index based on the ICD code, we need to map the disease diagnosis used in the comorbidity index to their corresponding ICD code. 
 
 There is also an AHRQ version (Agency for Healthcare Research and Quality)
+
+The SAS code can be found MCHP website: [Charlson Comorbidity Index](http://mchp-appserv.cpe.umanitoba.ca/viewConcept.php?conceptID=1098)
 
 <br><br>
 ## Reference
