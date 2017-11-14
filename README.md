@@ -12,15 +12,18 @@ Charlson et al. proposed this comorbidity index in their 1987 paper, [A new meth
 Note that in the original paper, the disease diagnosis was defined by reviewing medical charts. However, in the issurance claim data or EHR data, the disease diagnosis is defined by diagnosis code. So we need to define the diagnosis code for those diseases in the Charlson comorbidity index in order to calculate it.
 
 <br><br>
-## Charlson Comorbidity Index by Deyo et al.
+## Charlson Comorbidity Index by Deyo et al. (1992) and Romano et al. (1993)
 In 1992, Deyo et al. provided a way to calculate the Charlson comorbidity index using ICD-9-CM code. The table below shows the mapping between the diseases defined in original Charlson index and ICD-9-CM code. The table was adapted from [Adapting a clinical comorbidity index for use with ICD-9-CM administrative databases](https://ohsu.pure.elsevier.com/en/publications/adapting-a-clinical-comorbidity-index-for-use-with-icd-9-cm-admin-3)
 
 <img align="center" height="50%" width="50%" margin="auto" alt="Deyo Charlson Comorbidity Index" src="img/Deyo1.png">
 <img align="center" height="50%" width="50%" margin="auto" alt="Deyo Charlson Comorbidity Index" src="img/Deyo2.png">
 
+Similarly, Romano et al. (1993) also developed their version of Charlson Comorbidity Index using ICD-9-CM code in their paper [Further evidence concerning the use of a clinical comorbidity index with ICD-9-CM administrative data](http://www.sciencedirect.com/science/article/pii/089543569390106B) 
 
 <br><br>
-## Updated Charlson Comorbidity Index
+## Charlson Comorbidity Index by Quan et al.
+In 2005, Quan et al. further extended the Charlson Comorbidity Index calculation using ICD-9-CM and ICD-10 code ([Coding algorithms for defining comorbidities in ICD-9-CM and ICD-10 administrative data](https://insights.ovid.com/pubmed?pmid=16224307))
+
 The original Charlson Comorbidity Index was developed more than 20 years ago. In 2010, Quan et al. reevaluated the Charlson index based on a dataset of 55,929 patients. They reassigned the weights to each disease in the original Charlson index. Since five the them have updated weights of zeros, the updated Charlson Index only includes 12 diseases. The authors also validated the upated Charlson index on the external dataset from six other hospitals. The new 12-comorbidity index shows improved C-statistics for predicting mortality compared to the original one. The following table shows the 12 diseases and associated weights in updated Charlson Comorbidity Index (table was adapted from [Updating and Validating the Charlson Comorbidity Index and Score for Risk Adjustment in Hospital Discharge Abstracts Using Data From 6 Countries](https://academic.oup.com/aje/article-lookup/doi/10.1093/aje/kwq433))
 
 <img align="center" height="50%" width="50%" margin="auto" alt="Updated Charlson Comorbidity Index" src="img/Updated_CCI_Weights.png">
