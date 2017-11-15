@@ -39,9 +39,23 @@ Elixhauser et al. extended Charlson Comorbidity Index to include more diseases (
 
 
 <br><br>
-## How to Calculate Comorbidity Index?
-In order to calculate hte comorbidity index, we need to know the diagnosis. In the original Charlson Comorbidity Index paper, they reviewed the medical charts to define the patient's diagnosis. However, in the EHR data, the diagnosis is usually represented in diagnosis code (for example, ICD-9 or ICD-10 code). ICD stands for International Classification of Diseases - Medical Diagnosis Codes, which is commonly used for disease diagnosis classification. ICD-9 is the old version and ICD-10 is the new version. In order to calculate hte comorbidity index based on the ICD code, we need to map the disease diagnosis used in the comorbidity index to their corresponding ICD code. 
+## ICD code
+In order to calculate the comorbidity index, we need to know the diagnosis first. In the original Charlson Comorbidity Index paper, they reviewed the medical charts to define the patient's diagnosis. However, in the EHR data, the diagnosis is usually represented in diagnosis code (for example, ICD-9 or ICD-10 code). ICD stands for International Classification of Diseases, which is commonly used for disease diagnosis classification. ICD-9 is the old version and ICD-10 is the new version. In order to calculate the comorbidity index based on the ICD code, we need to map the disease diagnosis used in the comorbidity index to their corresponding ICD code. 
 
+We need to understand different versions of ICD codes before we can use the codes to calculate comorbidity index. 
+
+The main difference between ICD-9 and ICD-10 is that the latter has more categories (ICD-9:around 68000 codes; ICD-10:around 13000 codes). Another difference is that ICD-9 has only numeric categories but ICD-10 has alphanumeric categories. 
+
+The original ICD-9 and ICD-10 systems are published and maintained by the World Health Organization (WHO). But the original version of ICD codes are not actually used in the United States. Instead, both ICD-9 and ICD-10 have a modified version, called ICD-9-CM and ICD-10-CM (CM stands for Clinical Modification). Those are the official coding systems used in the United States to assign codes to diagnoses and procedures in hospitals. The modified version is maintained by Centers for Disease Control (CDC).
+
+[This online video](http://www.medicalbillingandcoding.org/icd-9-icd-9-cm/) explains the ICD-9, ICD-10 and their differences.
+
+ICD-9-CM diagnosis code has a format like "123.45", in which the first three digits are disease category and the 4th and 5th digit are sucategory and subclass. There are two other types of ICD-9-CM codes, which are E-codes ("E123.45") and V-codes ("V12.34"). E-codes in ICD-9-CM are for external causes of injury. V-codes records the reasons why a healthy person visits a hospital without any immediate injury or disease.
+
+ICD-10-CM diagnosis code has a format like "A12.345B".Similarly, the first three characters are catogory, the 4th one is the subcategory, the 5th and 6th ones are subclass and the final letter is the extension (type of encounters: initial encounters, subsequent encounters or previous conditions)
+
+<br><br>
+## How to Calculate Comorbidity Index?
 There is also an AHRQ version (Agency for Healthcare Research and Quality)
 
 The SAS code can be found on MCHP website: 
